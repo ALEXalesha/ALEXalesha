@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!--
+    Аватар ALEXalesha. Всё нарисовано кодом, рендер: tools/render_avatar.py.
+    Буква A из жидкого стекла (Paint, калькуляторы, LiquidGlass), перекладина - мазок
+    кисти (Paint), вокруг трасса с машинкой и лучами датчиков (AiCar, руль), за буквой
+    созвездие нейросети (AlexGPT, «Нарисуй - угадаю»), внизу Стамбул на закате.
+    Важное держится в круге радиусом ~430: GitHub обрезает аватар кругом.
+  -->
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#2a1a63"/>
+      <stop offset="0.45" stop-color="#150f3a"/>
+      <stop offset="1" stop-color="#07061a"/>
+    </radialGradient>
+    <radialGradient id="auroraV" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraP" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a3d" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#ff7a45" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb35c" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1240"/>
+      <stop offset="1" stop-color="#07061a"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0.15">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.35" stop-color="#6d8bff"/>
+      <stop offset="0.65" stop-color="#c05bf5"/>
+      <stop offset="1" stop-color="#ff7a59"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.45" stop-color="#e0f2fe" stop-opacity="0.6"/>
+      <stop offset="0.75" stop-color="#a5f3fc" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="tint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.26"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#b9e6ff" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="glassHue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#a78bfa" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#f0abfc" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="node" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#a5f3fc"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bubble" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.18" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="0.7" stop-color="#a78bfa" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e0f2fe" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <path id="track" d="M 512 150 C 700 140 880 250 880 430 C 880 560 800 600 812 690 C 826 800 690 846 560 830 C 470 818 420 860 330 850 C 190 834 140 730 170 640 C 196 560 128 500 150 400 C 176 250 330 158 512 150 Z"/>
+
+    <!-- Буква A: осевые линии, обведённые толстым круглым пером -->
+    <g id="glyph" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 318 772 L 512 262 L 706 772"/>
+    </g>
+    <mask id="aMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <use href="#glyph" stroke="white" stroke-width="124"/>
+    </mask>
+    <mask id="rimMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <use href="#glyph" stroke="white" stroke-width="124"/>
+      <use href="#glyph" stroke="black" stroke-width="100"/>
+    </mask>
+    <mask id="rimMaskWide" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <use href="#glyph" stroke="white" stroke-width="124"/>
+      <use href="#glyph" stroke="black" stroke-width="70" filter="url(#blur8)"/>
+    </mask>
+    <mask id="innerRimMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="black"/>
+      <use href="#glyph" stroke="white" stroke-width="100"/>
+      <use href="#glyph" stroke="black" stroke-width="84"/>
+    </mask>
+
+    <filter id="refract" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="110" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="blur40" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <filter id="blur18" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="blur8" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="blur3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="brush" x="-10%" y="-40%" width="120%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.22" numOctaves="3" seed="3" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="9" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.35" numOctaves="2" seed="11" result="bristle"/>
+      <feColorMatrix in="bristle" type="matrix"
+        values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.6 1.95" result="streaks"/>
+      <feComposite in="d" in2="streaks" operator="in"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"/>
+    </filter>
+
+    <!-- Фон, который видно и вокруг буквы, и сквозь неё (преломлённым) -->
+    <g id="sky-layer">
+      <rect width="1024" height="1024" fill="url(#sky)"/>
+      <ellipse cx="250" cy="260" rx="380" ry="300" fill="url(#auroraV)"/>
+      <ellipse cx="820" cy="330" rx="330" ry="280" fill="url(#auroraC)"/>
+      <ellipse cx="640" cy="720" rx="360" ry="220" fill="url(#auroraP)" opacity="0.7"/>
+      <rect y="560" width="1024" height="300" fill="url(#sunset)"/>
+      <circle cx="512" cy="835" r="120" fill="#ffd08a" opacity="0.55" filter="url(#blur40)"/>
+      <!-- звёзды -->
+      <g fill="#ffffff">
+        <circle cx="180" cy="170" r="2.2" opacity="0.9"/><circle cx="265" cy="120" r="1.5" opacity="0.7"/>
+        <circle cx="370" cy="95" r="2" opacity="0.8"/><circle cx="640" cy="110" r="1.6" opacity="0.7"/>
+        <circle cx="760" cy="150" r="2.4" opacity="0.9"/><circle cx="860" cy="220" r="1.4" opacity="0.6"/>
+        <circle cx="140" cy="330" r="1.6" opacity="0.6"/><circle cx="905" cy="420" r="1.8" opacity="0.7"/>
+        <circle cx="520" cy="70" r="1.3" opacity="0.6"/><circle cx="95" cy="470" r="1.3" opacity="0.5"/>
+      </g>
+    </g>
+    <g id="city">
+      <!-- вода и Стамбул: купола, минареты, Галатская башня -->
+      <rect y="872" width="1024" height="152" fill="url(#water)"/>
+      <g fill="#0c0922">
+        <path d="M0 880 L0 850 L60 850 L70 835 L120 835 L130 848 L200 848 L200 880 Z"/>
+        <!-- мечеть слева -->
+        <rect x="236" y="700" width="9" height="180"/><path d="M232 700 L240.5 660 L249 700 Z"/>
+        <rect x="415" y="700" width="9" height="180"/><path d="M411 700 L419.5 660 L428 700 Z"/>
+        <path d="M262 880 L262 812 Q262 790 285 788 L300 788 Q330 740 330 740 Q330 740 360 788 L375 788 Q398 790 398 812 L398 880 Z"/>
+        <path d="M285 790 Q330 700 375 790 Z"/>
+        <rect x="327" y="690" width="6" height="22"/>
+        <path d="M250 880 L250 830 Q268 812 286 830 L286 880 Z"/><path d="M374 880 L374 830 Q392 812 410 830 L410 880 Z"/>
+        <!-- Галатская башня -->
+        <rect x="610" y="742" width="44" height="138"/>
+        <rect x="604" y="742" width="56" height="12"/>
+        <path d="M606 742 L632 680 L658 742 Z"/>
+        <rect x="630" y="668" width="4" height="14"/>
+        <!-- мечеть справа -->
+        <rect x="738" y="720" width="8" height="160"/><path d="M734 720 L742 684 L750 720 Z"/>
+        <rect x="884" y="720" width="8" height="160"/><path d="M880 720 L888 684 L896 720 Z"/>
+        <path d="M760 880 L760 826 Q760 808 780 806 Q815 760 850 806 Q870 808 870 826 L870 880 Z"/>
+        <path d="M430 880 L430 858 L600 858 L600 880 Z"/><path d="M660 880 L660 860 L738 860 L738 880 Z"/>
+        <path d="M896 880 L896 852 L1024 852 L1024 880 Z"/>
+      </g>
+      <!-- отражение заката в воде -->
+      <g fill="#ffb35c" opacity="0.35">
+        <rect x="440" y="892" width="150" height="3" rx="1.5"/><rect x="470" y="908" width="96" height="3" rx="1.5"/>
+        <rect x="455" y="926" width="120" height="2.5" rx="1.2"/><rect x="492" y="944" width="52" height="2.5" rx="1.2"/>
+      </g>
+    </g>
+    <!-- Созвездие нейросети: три слоя, связи от слоя к слою -->
+    <g id="net">
+  <g stroke="#a5f3fc" stroke-width="1.6" opacity="0.5">
+    <path d="M150 380 L300 300 M150 380 L300 430 M150 500 L300 300 M150 500 L300 430 M150 500 L300 560
+             M300 300 L724 300 M300 430 L724 300 M300 430 L724 430 M300 560 L724 430 M300 560 L724 560
+             M724 300 L874 380 M724 430 L874 380 M724 430 L874 500 M724 560 L874 500"/>
+  </g>
+  <g stroke="#c4b5fd" stroke-width="1" opacity="0.35">
+    <path d="M300 300 L512 175 L724 300 M300 560 L512 175 M724 560 L512 175"/>
+  </g>
+  <g>
+    <circle cx="150" cy="380" r="22" fill="url(#node)"/><circle cx="150" cy="500" r="22" fill="url(#node)"/>
+    <circle cx="300" cy="300" r="26" fill="url(#node)"/><circle cx="300" cy="430" r="20" fill="url(#node)"/>
+    <circle cx="300" cy="560" r="24" fill="url(#node)"/><circle cx="512" cy="175" r="30" fill="url(#node)"/>
+    <circle cx="724" cy="300" r="26" fill="url(#node)"/><circle cx="724" cy="430" r="20" fill="url(#node)"/>
+    <circle cx="724" cy="560" r="24" fill="url(#node)"/>
+    <circle cx="874" cy="380" r="22" fill="url(#node)"/><circle cx="874" cy="500" r="22" fill="url(#node)"/>
+  </g>
+    </g>
+  </defs>
+
+  <use href="#sky-layer"/>
+  <use href="#city"/>
+
+  <use href="#net"/>
+
+  <!-- Трасса вокруг буквы, как в AiCar: асфальт, бортики, пунктир -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#track" stroke="#05040f" stroke-width="60" opacity="0.6" filter="url(#blur8)"/>
+    <use href="#track" stroke="#9aa3c7" stroke-width="50" opacity="0.9"/>
+    <use href="#track" stroke="#23263a" stroke-width="44"/>
+    <use href="#track" stroke="#f1f5ff" stroke-width="2.5" stroke-dasharray="18 16" opacity="0.8"/>
+  </g>
+
+  <!-- Машинка на трассе с лучами датчиков -->
+  <g transform="translate(868 500) rotate(98)">
+    <g stroke-width="2" opacity="0.9">
+      <line x1="0" y1="0" x2="95" y2="-70" stroke="#34d399"/>
+      <line x1="0" y1="0" x2="120" y2="-22" stroke="#34d399"/>
+      <line x1="0" y1="0" x2="120" y2="22" stroke="#fbbf24"/>
+      <line x1="0" y1="0" x2="95" y2="70" stroke="#34d399"/>
+    </g>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#fde047" stroke-width="2.5" opacity="0.85"/>
+    <rect x="-26" y="-13" width="52" height="26" rx="8" fill="#ef4444"/>
+    <rect x="-8" y="-10" width="16" height="20" rx="3" fill="#bfdbfe"/>
+    <rect x="16" y="-10" width="6" height="7" rx="1.5" fill="#fff7cc"/><rect x="16" y="3" width="6" height="7" rx="1.5" fill="#fff7cc"/>
+  </g>
+
+  <!-- Тень и свечение буквы -->
+  <use href="#glyph" stroke="#000000" stroke-width="132" opacity="0.55" transform="translate(0 26)" filter="url(#blur18)"/>
+  <use href="#glyph" stroke="#8b5cf6" stroke-width="150" opacity="0.35" filter="url(#blur40)"/>
+  <use href="#glyph" stroke="#dff7ff" stroke-width="134" opacity="0.28" filter="url(#blur18)"/>
+
+  <!-- Стекло: преломлённая и чуть увеличенная сцена внутри буквы -->
+  <g mask="url(#aMask)">
+    <g filter="url(#refract)">
+      <g transform="translate(512 520) scale(1.26) translate(-512 -520)">
+        <use href="#sky-layer"/>
+        <use href="#net"/>
+      </g>
+    </g>
+    <rect width="1024" height="1024" fill="url(#tint)"/>
+    <rect width="1024" height="1024" fill="url(#glassHue)" opacity="0.4"/>
+    <use href="#glyph" stroke="#0a0826" stroke-width="124" opacity="0.0"/>
+    <g mask="url(#rimMaskWide)"><rect width="1024" height="1024" fill="#07061f" opacity="0.32" filter="url(#blur8)"/></g>
+    <ellipse cx="420" cy="360" rx="70" ry="200" fill="#ffffff" opacity="0.22" transform="rotate(21 420 360)" filter="url(#blur18)"/>
+    <ellipse cx="640" cy="640" rx="40" ry="150" fill="#9fe7ff" opacity="0.18" transform="rotate(-21 640 640)" filter="url(#blur18)"/>
+  </g>
+  <rect width="1024" height="1024" fill="url(#rim)" mask="url(#rimMask)"/>
+  <rect width="1024" height="1024" fill="#ffffff" opacity="0.22" mask="url(#innerRimMask)" filter="url(#blur3)"/>
+  <!-- Блик на вершине -->
+  <ellipse cx="488" cy="300" rx="34" ry="12" fill="#ffffff" opacity="0.85" transform="rotate(-68 488 300)" filter="url(#blur3)"/>
+
+  <!-- Перекладина - мазок кисти -->
+  <g filter="url(#brush)">
+    <path d="M 346 612 C 420 596 520 604 604 598 C 640 596 668 604 690 600" fill="none" stroke="url(#stroke)" stroke-width="66" stroke-linecap="round"/>
+  </g>
+  <path d="M 380 598 C 450 588 540 594 640 588" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.45" filter="url(#blur3)"/>
+
+  <!-- Стеклянные пузыри -->
+  <circle cx="800" cy="200" r="34" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="846" cy="252" r="16" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="214" cy="720" r="22" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+
+  <rect width="1024" height="1024" filter="url(#grain)"/>
+</svg>

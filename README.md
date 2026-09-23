@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ALEXalesha/PaintPro/main/paint-pro-electron/docs/brand/avatar.png" width="112" alt="">
+<img src="avatar.png" width="140" alt="">
 
 # Alex
 
