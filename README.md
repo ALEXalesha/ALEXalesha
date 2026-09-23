@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="avatar.png" width="140" alt="">
+<img src="avatar.jpg" width="140" alt="">
 
 # Alex
 

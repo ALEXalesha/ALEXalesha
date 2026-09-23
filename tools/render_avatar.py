@@ -28,7 +28,12 @@ def main() -> None:
         page.locator("#a").screenshot(path=str(ROOT / "avatar.png"))
         page.locator("#c").screenshot(path=str(ROOT / "tools" / "avatar-circle-preview.png"), omit_background=True)
         browser.close()
-    print("avatar.png")
+    # GitHub принимает аватар не больше 1 МБ, а PNG с зерном весит ~1.3 МБ.
+    # JPEG 92 весит ~150 КБ и на глаз не отличается - его и загружать в профиль.
+    from PIL import Image
+    Image.open(ROOT / "avatar.png").convert("RGB").save(
+        ROOT / "avatar.jpg", quality=92, optimize=True, progressive=True)
+    print("avatar.png, avatar.jpg")
 
 
 if __name__ == "__main__":
