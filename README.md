@@ -22,8 +22,8 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 <br>A raster editor written twice: one HTML file in Electron that also <a href="https://alexalesha.github.io/PaintPro/">runs in the browser</a>, and a native C# twin on SkiaSharp. Layers, a history where any edit can be switched off.
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/ALEXalesha/Neural-Network"><img src="https://raw.githubusercontent.com/ALEXalesha/Neural-Network/main/docs/screenshots/hero.png" alt="AlexGPT"></a>
-<br><b><a href="https://github.com/ALEXalesha/Neural-Network">AlexGPT</a></b> · Python, PyTorch, Qt
+<a href="https://github.com/ALEXalesha/AiWorkbench"><img src="https://raw.githubusercontent.com/ALEXalesha/AiWorkbench/main/docs/screenshots/hero.png" alt="AlexGPT"></a>
+<br><b><a href="https://github.com/ALEXalesha/AiWorkbench">AlexGPT</a></b> · Python, PyTorch, Qt
 <br>A local AI workbench: chat through LM Studio, plus models trained from scratch (translator, named entities, sentiment, spam) and a canvas that reads what you draw.
 </td>
 </tr>
@@ -46,8 +46,8 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 <br>One network draws the track, another the car, and fifty more learn to drive it by evolution, live on screen.
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/ALEXalesha/SynchronizationApp"><img src="https://raw.githubusercontent.com/ALEXalesha/SynchronizationApp/main/docs/screenshots/window.png" alt="SyncGlass"></a>
-<br><b><a href="https://github.com/ALEXalesha/SynchronizationApp">SyncGlass</a></b> · Electron
+<a href="https://github.com/ALEXalesha/SyncGlass"><img src="https://raw.githubusercontent.com/ALEXalesha/SyncGlass/main/docs/screenshots/window.png" alt="SyncGlass"></a>
+<br><b><a href="https://github.com/ALEXalesha/SyncGlass">SyncGlass</a></b> · Electron
 <br>Folder sync between a laptop and a PC on the network: preview first, moves recognised, and Stop undoes the whole run.
 </td>
 </tr>
@@ -56,12 +56,12 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 | Tool | What it does | Stack |
 | --- | --- | --- |
 | [SaltTranslator](https://github.com/ALEXalesha/SaltTranslator) | Offline translator on NLLB-3.3B, on the CPU: 202 languages plus the languages of Uganda | Python, CTranslate2, Electron |
-| [IntelegienceDrawer](https://github.com/ALEXalesha/IntelegienceDrawer) | Draw with the mouse, a CNN reads digits, letters and maths signs, left to right, as numbers or words | PyTorch, tkinter |
+| [IntelligenceDrawer](https://github.com/ALEXalesha/IntelligenceDrawer) | Draw with the mouse, a CNN reads digits, letters and maths signs, left to right, as numbers or words | PyTorch, tkinter |
 | [InstallerModels](https://github.com/ALEXalesha/InstallerModels) | Downloads ComfyUI models back from Hugging Face: resumable, size- and sha256-checked, your own models by link | Python, Qt |
-| [SortProgramm](https://github.com/ALEXalesha/SortProgramm) | Sorts the Downloads folder by category and type: plan first, undo always, rules editable from the window | PyQt6 |
+| [SortDownloads](https://github.com/ALEXalesha/SortDownloads) | Sorts the Downloads folder by category and type: plan first, undo always, rules editable from the window | PyQt6 |
 | [WheelScript](https://github.com/ALEXalesha/WheelScript) | A racing wheel as mouse, keyboard or a virtual Xbox gamepad, for games that do not understand a wheel | Python, Qt |
-| [CheckProg](https://github.com/ALEXalesha/CheckProg) | A checklist with a note on every item; each list is a plain JSON file | Python, Qt |
-| [Converter](https://github.com/ALEXalesha/Converter) | Turns a landscape A4 school timetable (.docx or .pdf) into a half-sheet PDF ready to print and cut | Python, Qt |
+| [Checklist](https://github.com/ALEXalesha/Checklist) | A checklist with a note on every item; each list is a plain JSON file | Python, Qt |
+| [TimetableToPdf](https://github.com/ALEXalesha/TimetableToPdf) | Turns a landscape A4 school timetable (.docx or .pdf) into a half-sheet PDF ready to print and cut | Python, Qt |
 
 ## How these are made
 
