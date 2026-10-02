@@ -4,6 +4,9 @@
     Буква A из жидкого стекла (Paint, калькуляторы, LiquidGlass), перекладина - мазок
     кисти (Paint), вокруг трасса с машинкой и лучами датчиков (AiCar, руль), за буквой
     созвездие нейросети (AlexGPT, «Нарисуй - угадаю»), внизу Стамбул на закате.
+    С 02.10.2026: за машинкой дым дрифта (Horizon Drift), слева блок травы и разлетающиеся
+    воксели (Кубический мир, моды Teardown), справа сопло 3D-принтера печатает башенку
+    (калибровка), пузыри - мыльные пузыри AiBoy.
     Важное держится в круге радиусом ~430: GitHub обрезает аватар кругом.
   -->
   <defs>
@@ -195,6 +198,14 @@
     <use href="#track" stroke="#f1f5ff" stroke-width="2.5" stroke-dasharray="18 16" opacity="0.8"/>
   </g>
 
+  <!-- Дым дрифта за машинкой (Horizon Drift) -->
+  <g fill="#e5e7eb" filter="url(#blur8)">
+    <circle cx="872" cy="456" r="20" opacity="0.6"/>
+    <circle cx="884" cy="418" r="28" opacity="0.45"/>
+    <circle cx="896" cy="376" r="36" opacity="0.3"/>
+    <circle cx="852" cy="432" r="18" opacity="0.4"/>
+  </g>
+
   <!-- Машинка на трассе с лучами датчиков -->
   <g transform="translate(868 500) rotate(98)">
     <g stroke-width="2" opacity="0.9">
@@ -240,10 +251,42 @@
   </g>
   <path d="M 380 598 C 450 588 540 594 640 588" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.45" filter="url(#blur3)"/>
 
+  <!-- Кубический мир и Teardown: блок травы, рядом разлетаются воксели -->
+  <ellipse cx="250" cy="745" rx="70" ry="16" fill="#000000" opacity="0.35" filter="url(#blur8)"/>
+  <g opacity="1"><path d="M250 628 L296 651.0 L250 674 L204 651.0 Z" fill="#4ade80"/><path d="M204 651.0 L250 674 L250 720 L204 697.0 Z" fill="#7c4a1e"/><path d="M250 674 L296 651.0 L296 697.0 L250 720 Z" fill="#5b3414"/><path d="M250 628 L296 651.0 L250 674 L204 651.0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/></g>
+  <path d="M204 651 L250 674 L296 651 L296 660 L250 683 L204 660 Z" fill="#22c55e" opacity="0.9"/>
+  <g opacity="0.95"><path d="M318 600 L333 607.5 L318 615 L303 607.5 Z" fill="#4ade80"/><path d="M303 607.5 L318 615 L318 630 L303 622.5 Z" fill="#7c4a1e"/><path d="M318 615 L333 607.5 L333 622.5 L318 630 Z" fill="#5b3414"/><path d="M318 600 L333 607.5 L318 615 L303 607.5 Z" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/></g>
+  <g opacity="0.85"><path d="M338 566 L348 571.0 L338 576 L328 571.0 Z" fill="#86efac"/><path d="M328 571.0 L338 576 L338 586 L328 581.0 Z" fill="#8b5a2b"/><path d="M338 576 L348 571.0 L348 581.0 L338 586 Z" fill="#6b4423"/><path d="M338 566 L348 571.0 L338 576 L328 571.0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/></g>
+  <g opacity="0.9"><path d="M206 596 L218 602.0 L206 608 L194 602.0 Z" fill="#a5f3fc"/><path d="M194 602.0 L206 608 L206 620 L194 614.0 Z" fill="#38bdf8"/><path d="M206 608 L218 602.0 L218 614.0 L206 620 Z" fill="#0ea5e9"/><path d="M206 596 L218 602.0 L206 608 L194 602.0 Z" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/></g>
+  <g opacity="0.8"><path d="M186 566 L193 569.5 L186 573 L179 569.5 Z" fill="#e0f2fe"/><path d="M179 569.5 L186 573 L186 580 L179 576.5 Z" fill="#7dd3fc"/><path d="M186 573 L193 569.5 L193 576.5 L186 580 Z" fill="#38bdf8"/><path d="M186 566 L193 569.5 L186 573 L179 569.5 Z" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/></g>
+  <circle cx="250" cy="700" r="70" fill="#4ade80" opacity="0.10" filter="url(#blur18)"/>
+
+  <!-- Калибровка 3D-принтера: горячее сопло печатает башенку из светящихся слоёв -->
+  <g>
+    <circle cx="752" cy="700" r="60" fill="#ff8a3d" opacity="0.18" filter="url(#blur18)"/>
+    <rect x="722" y="742" width="60" height="7" rx="3.5" fill="#ff7a45"/>
+    <rect x="722" y="733" width="60" height="7" rx="3.5" fill="#ff8a3d"/>
+    <rect x="722" y="724" width="60" height="7" rx="3.5" fill="#ffa94d"/>
+    <rect x="722" y="715" width="60" height="7" rx="3.5" fill="#ffb35c"/>
+    <rect x="722" y="706" width="60" height="7" rx="3.5" fill="#ffc46b"/>
+    <rect x="722" y="697" width="60" height="7" rx="3.5" fill="#ffd08a"/>
+    <rect x="722" y="688" width="60" height="7" rx="3.5" fill="#ffe0a8"/>
+    <rect x="722" y="679" width="60" height="7" rx="3.5" fill="#fff1c7" opacity="0.9"/>
+    <path d="M752 679 L752 668" stroke="#fff7d6" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="752" cy="672" r="9" fill="#ffd08a" opacity="0.9" filter="url(#blur3)"/>
+    <path d="M740 646 L764 646 L756 664 L748 664 Z" fill="#f59e0b"/>
+    <path d="M742 646 L762 646 L755 662 L749 662 Z" fill="#fcd34d" opacity="0.5"/>
+    <rect x="726" y="604" width="52" height="42" rx="6" fill="#d4a017"/>
+    <rect x="726" y="604" width="52" height="10" rx="5" fill="#fde68a" opacity="0.6"/>
+    <circle cx="764" cy="628" r="5" fill="#7c2d12"/>
+    <rect x="744" y="560" width="16" height="44" rx="4" fill="#94a3b8"/>
+    <path d="M752 520 C 752 540 752 548 752 560" stroke="#22d3ee" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
   <!-- Стеклянные пузыри -->
   <circle cx="800" cy="200" r="34" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"/>
   <circle cx="846" cy="252" r="16" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
-  <circle cx="214" cy="720" r="22" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="178" cy="520" r="20" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
 
   <rect width="1024" height="1024" filter="url(#grain)"/>
 </svg>
