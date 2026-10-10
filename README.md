@@ -42,7 +42,7 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/ALEXalesha/AiCar"><img src="https://raw.githubusercontent.com/ALEXalesha/AiCar/main/docs/preview_game.png" alt="AiCar"></a>
-<br><b><a href="https://github.com/ALEXalesha/AiCar">AiCar</a></b> · NumPy + pygame
+<br><b><a href="https://github.com/ALEXalesha/AiCar">AiCar</a></b> · NumPy + Qt (PySide6)
 <br>One network draws the track, another the car, and fifty more learn to drive it by evolution, live on screen.
 </td>
 <td width="50%" valign="top">
