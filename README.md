@@ -64,6 +64,7 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 | [TimetableToPdf](https://github.com/ALEXalesha/TimetableToPdf) | Turns a landscape A4 school timetable (.docx or .pdf) into a half-sheet PDF ready to print and cut | Python, Qt |
 | [WritingSpeed](https://github.com/ALEXalesha/WritingSpeed) | A typing speed test: time, words, quotes, zen; six languages and code; WPM, accuracy, mistakes by key on the keyboard. [Try it online](https://alexalesha.github.io/WritingSpeed/) | HTML, Electron |
 | [Calibrate3dPrinter](https://github.com/ALEXalesha/Calibrate3dPrinter) | Ready calibration G-code for any FDM printer, no slicer: ten tests, set up from a G-code you already printed. The same bytes from two editions; [open in the browser](https://alexalesha.github.io/Calibrate3dPrinter/) | JavaScript, Electron, Python, Qt |
+| [MediaPlayer](https://github.com/ALEXalesha/MediaPlayer) | A music and video player in one page with its own album: 12 songs written by a song generator and played through Web Audio; your files, playlist, 10-band equalizer, visualizer, media keys. [Try it online](https://alexalesha.github.io/MediaPlayer/) | HTML, Web Audio, Electron |
 
 ## Games and web demos
 
