@@ -72,6 +72,7 @@ Everything here runs in the browser, offline once loaded, with tests in headless
 | Project | What it is | Play |
 | --- | --- | --- |
 | [GameRoom](https://github.com/ALEXalesha/GameRoom) | The Igroteka: eleven games and four system demos in tabs of one page, also an Electron app | [open](https://alexalesha.github.io/GameRoom/) |
+| [Compiler](https://github.com/ALEXalesha/Compiler) | C, C++, Python, JavaScript, TypeScript, Lua, Ruby and SQL in the browser: Clang compiles C/C++ to WebAssembly, every program in its own worker with a time limit, errors on their line | [open](https://alexalesha.github.io/Compiler/) |
 | [HorizonDrift](https://github.com/ALEXalesha/HorizonDrift) | A 3D drift racer with AI rivals and a level editor | [open](https://alexalesha.github.io/HorizonDrift/) |
 | [AlexMine](https://github.com/ALEXalesha/AlexMine) | A voxel sandbox: endless world, caves, water, day and night | [open](https://alexalesha.github.io/AlexMine/) |
 | [BlockCity](https://github.com/ALEXalesha/BlockCity) | A small place-based block platform: worlds, avatars, an editor | [open](https://alexalesha.github.io/BlockCity/) |
