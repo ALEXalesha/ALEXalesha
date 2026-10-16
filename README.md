@@ -46,7 +46,7 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 <br>A living aquarium run by neural networks: one invents a 2D world, another a little person, and he learns on his own to walk, swim, play the guitar, tame a dog and climb mountains.
 </td>
 <td width="50%" valign="top">
-<a href="https://alexalesha.github.io/"><img src="https://raw.githubusercontent.com/ALEXalesha/ALEXalesha.github.io/main/docs/screens/app-home.png" alt="Hub"></a>
+<a href="https://alexalesha.github.io/"><img src="cards/hub.png" alt="Hub"></a>
 <br><b><a href="https://github.com/ALEXalesha/ALEXalesha.github.io">Hub</a></b> · HTML, Electron
 <br>Everything web I made in one place: eleven games, five programs (a compiler, a media player, a file manager...) and four system demos, each in its own tab, offline. <a href="https://alexalesha.github.io/">Open it</a> - it is this site's home page - or install the Windows app.
 </td>
