@@ -29,9 +29,9 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/ALEXalesha/CalculatorPro"><img src="https://raw.githubusercontent.com/ALEXalesha/CalculatorPro/main/calcpro-glass/docs/screenshots/modes.png" alt="Calculators"></a>
-<br><b><a href="https://github.com/ALEXalesha/CalculatorPro">Calculators</a></b> · C#/WPF + Electron
-<br>Three Liquid Glass calculators with their own parsers and no <code>eval</code>. The WPF one counts in <code>decimal</code>, so 0.1 + 0.2 is exactly 0.3.
+<a href="https://github.com/ALEXalesha/HorizonDrift"><img src="https://raw.githubusercontent.com/ALEXalesha/HorizonDrift/main/docs/screens/race.png" alt="Horizon Drift"></a>
+<br><b><a href="https://github.com/ALEXalesha/HorizonDrift">Horizon Drift</a></b> · JavaScript, three.js
+<br>An arcade racing and drifting game in 3D, in one HTML page: a career, eight cars, free roam, AI rivals and car damage. Models, sound and music are made by code. <a href="https://alexalesha.github.io/HorizonDrift/">Play online</a>.
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/ALEXalesha/LiquidGlass"><img src="https://raw.githubusercontent.com/ALEXalesha/LiquidGlass/main/docs/screenshots/css-svg.png" alt="Liquid Glass"></a>
@@ -41,20 +41,22 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/ALEXalesha/AiCar"><img src="https://raw.githubusercontent.com/ALEXalesha/AiCar/main/docs/preview_game.png" alt="AiCar"></a>
-<br><b><a href="https://github.com/ALEXalesha/AiCar">AiCar</a></b> · NumPy + Qt (PySide6)
-<br>One network draws the track, another the car, and fifty more learn to drive it by evolution, live on screen.
+<a href="https://github.com/ALEXalesha/AiBoy"><img src="https://raw.githubusercontent.com/ALEXalesha/AiBoy/main/docs/preview_observe.png" alt="AiBoy"></a>
+<br><b><a href="https://github.com/ALEXalesha/AiBoy">AiBoy</a></b> · NumPy + Qt (PySide6)
+<br>A living aquarium run by neural networks: one invents a 2D world, another a little person, and he learns on his own to walk, swim, play the guitar, tame a dog and climb mountains.
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/ALEXalesha/SyncGlass"><img src="https://raw.githubusercontent.com/ALEXalesha/SyncGlass/main/docs/screenshots/window.png" alt="SyncGlass"></a>
-<br><b><a href="https://github.com/ALEXalesha/SyncGlass">SyncGlass</a></b> · Electron
-<br>Folder sync between a laptop and a PC on the network: preview first, moves recognised, and Stop undoes the whole run.
+<a href="https://alexalesha.github.io/"><img src="https://raw.githubusercontent.com/ALEXalesha/ALEXalesha.github.io/main/docs/screens/app-home.png" alt="Hub"></a>
+<br><b><a href="https://github.com/ALEXalesha/ALEXalesha.github.io">Hub</a></b> · HTML, Electron
+<br>Everything web I made in one place: eleven games, five programs (a compiler, a media player, a file manager...) and four system demos, each in its own tab, offline. <a href="https://alexalesha.github.io/">Open it</a> - it is this site's home page - or install the Windows app.
 </td>
 </tr>
 </table>
 
 | Tool | What it does | Stack |
 | --- | --- | --- |
+| [SyncGlass](https://github.com/ALEXalesha/SyncGlass) | Folder sync between a laptop and a PC on the network: preview first, moves recognised, and Stop undoes the whole run | Electron, C# |
+| [CalculatorPro](https://github.com/ALEXalesha/CalculatorPro) | Three Liquid Glass calculators with their own parsers and no `eval`; the WPF one counts in `decimal`, so 0.1 + 0.2 is exactly 0.3 | C#/WPF, Electron |
 | [SaltTranslator](https://github.com/ALEXalesha/SaltTranslator) | Offline translator on NLLB-3.3B, on the CPU: 202 languages plus the languages of Uganda | Python, CTranslate2, Electron |
 | [IntelligenceDrawer](https://github.com/ALEXalesha/IntelligenceDrawer) | Draw with the mouse, a CNN reads digits, letters and maths signs, left to right, as numbers or words | PyTorch, tkinter |
 | [InstallerModels](https://github.com/ALEXalesha/InstallerModels) | Downloads ComfyUI models back from Hugging Face: resumable, size- and sha256-checked, your own models by link | Python, Qt |
@@ -62,7 +64,7 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 | [WheelScript](https://github.com/ALEXalesha/WheelScript) | A racing wheel as mouse, keyboard or a virtual Xbox gamepad, for games that do not understand a wheel | Python, Qt |
 | [Checklist](https://github.com/ALEXalesha/Checklist) | A checklist with a note on every item; each list is a plain JSON file | Python, Qt |
 | [TimetableToPdf](https://github.com/ALEXalesha/TimetableToPdf) | Turns a landscape A4 school timetable (.docx or .pdf) into a half-sheet PDF ready to print and cut | Python, Qt |
-| [WritingSpeed](https://github.com/ALEXalesha/WritingSpeed) | A typing speed test: time, words, quotes, zen; six languages and code; WPM, accuracy, mistakes by key on the keyboard. [Try it online](https://alexalesha.github.io/WritingSpeed/) | HTML, Electron |
+| [WritingSpeed](https://github.com/ALEXalesha/WritingSpeed) | A typing speed test: time, words, texts, zen; six languages and code; WPM, accuracy, mistakes by key on the keyboard. [Try it online](https://alexalesha.github.io/WritingSpeed/) | HTML, Electron |
 | [Calibrate3dPrinter](https://github.com/ALEXalesha/Calibrate3dPrinter) | Ready calibration G-code for any FDM printer, no slicer: ten tests, set up from a G-code you already printed. The same bytes from two editions; [open in the browser](https://alexalesha.github.io/Calibrate3dPrinter/) | JavaScript, Electron, Python, Qt |
 | [MediaPlayer](https://github.com/ALEXalesha/MediaPlayer) | A music and video player in one page with its own album: 12 songs written by a song generator and played through Web Audio; your files, playlist, 10-band equalizer, visualizer, media keys. [Try it online](https://alexalesha.github.io/MediaPlayer/) | HTML, Web Audio, Electron |
 | [FilesManager](https://github.com/ALEXalesha/FilesManager) | A file explorer in one page: folder tree, tabs, two panels, wildcard search, preview, Windows Explorer hotkeys. The Windows app deletes only to the Recycle Bin, even with Shift+Del. [Try it online](https://alexalesha.github.io/FilesManager/) (demo disk) | HTML, Electron |
@@ -73,7 +75,7 @@ Everything here runs in the browser, offline once loaded, with tests in headless
 
 | Project | What it is | Play |
 | --- | --- | --- |
-| [GameRoom](https://github.com/ALEXalesha/GameRoom) | The Igroteka: eleven games and four system demos in tabs of one page, also an Electron app | [open](https://alexalesha.github.io/GameRoom/) |
+| [Hub](https://github.com/ALEXalesha/ALEXalesha.github.io) | The Hub (formerly Igroteka): eleven games, five programs and four system demos in tabs of one page, also a Windows app | [open](https://alexalesha.github.io/) |
 | [Compiler](https://github.com/ALEXalesha/Compiler) | C, C++, Python, JavaScript, TypeScript, Lua, Ruby and SQL in the browser: Clang compiles C/C++ to WebAssembly, every program in its own worker with a time limit, errors on their line | [open](https://alexalesha.github.io/Compiler/) |
 | [HorizonDrift](https://github.com/ALEXalesha/HorizonDrift) | A 3D drift racer with AI rivals and a level editor | [open](https://alexalesha.github.io/HorizonDrift/) |
 | [AlexMine](https://github.com/ALEXalesha/AlexMine) | A voxel sandbox: endless world, caves, water, day and night | [open](https://alexalesha.github.io/AlexMine/) |
@@ -82,7 +84,7 @@ Everything here runs in the browser, offline once loaded, with tests in headless
 | [WindowsDemo](https://github.com/ALEXalesha/WindowsDemo) · [MacOSDemo](https://github.com/ALEXalesha/MacOSDemo) · [iOSDemo](https://github.com/ALEXalesha/iOSDemo) · [AndroidDemo](https://github.com/ALEXalesha/AndroidDemo) | Fan-made desktop and phone shells with working apps and the games inside | [Win](https://alexalesha.github.io/WindowsDemo/) · [Mac](https://alexalesha.github.io/MacOSDemo/) · [iOS](https://alexalesha.github.io/iOSDemo/) · [Android](https://alexalesha.github.io/AndroidDemo/) |
 | [DinoRun](https://github.com/ALEXalesha/DinoRun) · [JumpJump](https://github.com/ALEXalesha/JumpJump) · [HotJungle](https://github.com/ALEXalesha/HotJungle) · [SpaceGun](https://github.com/ALEXalesha/SpaceGun) · [FallingBlocks](https://github.com/ALEXalesha/FallingBlocks) · [SudokuGame](https://github.com/ALEXalesha/SudokuGame) · [FlappyWings](https://github.com/ALEXalesha/FlappyWings) | Small arcade and puzzle games, one HTML file each | [Dino](https://alexalesha.github.io/DinoRun/) · [Jump](https://alexalesha.github.io/JumpJump/) · [Jungle](https://alexalesha.github.io/HotJungle/) · [Space](https://alexalesha.github.io/SpaceGun/) · [Blocks](https://alexalesha.github.io/FallingBlocks/) · [Sudoku](https://alexalesha.github.io/SudokuGame/) · [Wings](https://alexalesha.github.io/FlappyWings/) |
 
-Games that learn: [AiBoy](https://github.com/ALEXalesha/AiBoy) (a little person who learns to walk and play by himself), [SnakeAi](https://github.com/ALEXalesha/SnakeAi), [TicTacToeAi](https://github.com/ALEXalesha/TicTacToeAi), [AiCar](https://github.com/ALEXalesha/AiCar), [DurakAi](https://github.com/ALEXalesha/DurakAi) (Durak against an AI that never peeks), [RockPaperAi](https://github.com/ALEXalesha/RockPaperAi) (rock paper scissors against an AI that learns your habits; its move is sealed before you choose). Mods: [ETS2Mods](https://github.com/ALEXalesha/ETS2Mods) (Euro Truck Simulator 2, also on the Steam Workshop), and a Counter-Strike 2 map, [MyCS2Map](https://github.com/ALEXalesha/MyCS2Map).
+Games that learn: [SnakeAi](https://github.com/ALEXalesha/SnakeAi), [TicTacToeAi](https://github.com/ALEXalesha/TicTacToeAi), [AiCar](https://github.com/ALEXalesha/AiCar), [DurakAi](https://github.com/ALEXalesha/DurakAi) (Durak against an AI that never peeks), [RockPaperAi](https://github.com/ALEXalesha/RockPaperAi) (rock paper scissors against an AI that learns your habits; its move is sealed before you choose). Mods: [ETS2Mods](https://github.com/ALEXalesha/ETS2Mods) (Euro Truck Simulator 2, also on the Steam Workshop), and a Counter-Strike 2 map, [MyCS2Map](https://github.com/ALEXalesha/MyCS2Map).
 
 ## How these are made
 
