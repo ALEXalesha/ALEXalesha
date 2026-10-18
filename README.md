@@ -11,7 +11,7 @@ Most of what is here I use myself: a paint program, a local AI workbench, a tran
 <sub>Интерфейсы программ на русском, README у каждого проекта на английском и русском.</sub>
 
 [![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-D97757?logo=claude&logoColor=white)](https://claude.com/claude-code)
-[![Support me on Ko-fi](https://img.shields.io/badge/Support_me-Ko--fi-D97757?logo=kofi&logoColor=white)](https://ko-fi.com/alexaloysha)
+[![Support me on Ko-fi](https://img.shields.io/badge/Support_me-Ko--fi-D97757?logo=kofi&logoColor=white)](https://ko-fi.com/alexalesha)
 Code, tests and docs are written by Claude (Anthropic) in Claude Code. Ideas, testing and decisions - Alexey.
 
 </div>
