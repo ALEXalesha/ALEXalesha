@@ -6,7 +6,7 @@
 
 **Windows desktop apps, small neural networks and the tests that keep them honest.**
 
-Most of what is here I use myself: a paint program, a local AI workbench, a translator that runs without the internet, a downloads sorter, a folder sync. Every project has a release you can download and run.
+Most of what is here I use myself: a paint program, a local AI workbench, a translator that runs without the internet, a downloads sorter, a folder sync. Projects with a release have a build you can download and run; the rest are marked as work in progress or planned.
 
 <sub>Интерфейсы программ на русском, README у каждого проекта на английском и русском.</sub>
 
@@ -72,6 +72,8 @@ Code, tests and docs are written by Claude (Anthropic) in Claude Code. Ideas, te
 | [Calibrate3dPrinter](https://github.com/ALEXalesha/Calibrate3dPrinter) | Ready calibration G-code for any FDM printer, no slicer: ten tests, set up from a G-code you already printed. The same bytes from two editions; [open in the browser](https://alexalesha.github.io/Calibrate3dPrinter/) | JavaScript, Electron, Python, Qt |
 | [MediaPlayer](https://github.com/ALEXalesha/MediaPlayer) | A music and video player in one page with its own album: 12 songs written by a song generator and played through Web Audio; your files, playlist, 10-band equalizer, visualizer, media keys. [Try it online](https://alexalesha.github.io/MediaPlayer/) | HTML, Web Audio, Electron |
 | [FilesManager](https://github.com/ALEXalesha/FilesManager) | A file explorer in one page: folder tree, tabs, two panels, wildcard search, preview, Windows Explorer hotkeys. The Windows app deletes only to the Recycle Bin, even with Shift+Del. [Try it online](https://alexalesha.github.io/FilesManager/) (demo disk) | HTML, Electron |
+| [Slicer](https://github.com/ALEXalesha/Slicer) | Slicer CC, a simple slicer for the Elegoo Centauri Carbon: three choices for beginners, every setting in Advanced, and sending that checks the printer really got the file. Not released yet | Electron |
+| [AiFor3DPrinter](https://github.com/ALEXalesha/AiFor3DPrinter) | A neural network watches the printer camera while it prints and sends a Telegram alert with a heat map on spaghetti, a detached part or a nozzle blob | Python, ONNX |
 
 ## Games and web demos
 
@@ -80,6 +82,7 @@ Everything here runs in the browser, offline once loaded, with tests in headless
 | Project | What it is | Play |
 | --- | --- | --- |
 | [Hub](https://github.com/ALEXalesha/ALEXalesha.github.io) | The Hub (formerly Igroteka): eleven games, five programs and four system demos in tabs of one page, also a Windows app | [open](https://alexalesha.github.io/) |
+| [RailRunner](https://github.com/ALEXalesha/RailRunner) | An endless 3D runner on three railway tracks: hurdles, bars, oncoming trains, coins and power-ups, also a Windows app | [open](https://alexalesha.github.io/RailRunner/) |
 | [Compiler](https://github.com/ALEXalesha/Compiler) | C, C++, Python, JavaScript, TypeScript, Lua, Ruby and SQL in the browser: Clang compiles C/C++ to WebAssembly, every program in its own worker with a time limit, errors on their line | [open](https://alexalesha.github.io/Compiler/) |
 | [HorizonDrift](https://github.com/ALEXalesha/HorizonDrift) | A 3D drift racer with AI rivals and a level editor | [open](https://alexalesha.github.io/HorizonDrift/) |
 | [AlexMine](https://github.com/ALEXalesha/AlexMine) | A voxel sandbox: endless world, caves, water, day and night | [open](https://alexalesha.github.io/AlexMine/) |
@@ -88,7 +91,43 @@ Everything here runs in the browser, offline once loaded, with tests in headless
 | [WindowsDemo](https://github.com/ALEXalesha/WindowsDemo) · [MacOSDemo](https://github.com/ALEXalesha/MacOSDemo) · [iOSDemo](https://github.com/ALEXalesha/iOSDemo) · [AndroidDemo](https://github.com/ALEXalesha/AndroidDemo) | Fan-made desktop and phone shells with working apps and the games inside | [Win](https://alexalesha.github.io/WindowsDemo/) · [Mac](https://alexalesha.github.io/MacOSDemo/) · [iOS](https://alexalesha.github.io/iOSDemo/) · [Android](https://alexalesha.github.io/AndroidDemo/) |
 | [DinoRun](https://github.com/ALEXalesha/DinoRun) · [JumpJump](https://github.com/ALEXalesha/JumpJump) · [HotJungle](https://github.com/ALEXalesha/HotJungle) · [SpaceGun](https://github.com/ALEXalesha/SpaceGun) · [FallingBlocks](https://github.com/ALEXalesha/FallingBlocks) · [SudokuGame](https://github.com/ALEXalesha/SudokuGame) · [FlappyWings](https://github.com/ALEXalesha/FlappyWings) | Small arcade and puzzle games, one HTML file each | [Dino](https://alexalesha.github.io/DinoRun/) · [Jump](https://alexalesha.github.io/JumpJump/) · [Jungle](https://alexalesha.github.io/HotJungle/) · [Space](https://alexalesha.github.io/SpaceGun/) · [Blocks](https://alexalesha.github.io/FallingBlocks/) · [Sudoku](https://alexalesha.github.io/SudokuGame/) · [Wings](https://alexalesha.github.io/FlappyWings/) |
 
-Games that learn: [SnakeAi](https://github.com/ALEXalesha/SnakeAi), [TicTacToeAi](https://github.com/ALEXalesha/TicTacToeAi), [AiCar](https://github.com/ALEXalesha/AiCar), [DurakAi](https://github.com/ALEXalesha/DurakAi) (Durak against an AI that never peeks), [RockPaperAi](https://github.com/ALEXalesha/RockPaperAi) (rock paper scissors against an AI that learns your habits; its move is sealed before you choose). Mods: [ETS2Mods](https://github.com/ALEXalesha/ETS2Mods) (Euro Truck Simulator 2, also on the Steam Workshop), and a Counter-Strike 2 map, [MyCS2Map](https://github.com/ALEXalesha/MyCS2Map).
+## Games that learn
+
+Windows games against an AI that taught itself, PySide6 and numpy. Most of them also open as tabs of [AiGameRoom](https://github.com/ALEXalesha/AiGameRoom).
+
+| Game | What the AI does | State |
+| --- | --- | --- |
+| [SnakeAi](https://github.com/ALEXalesha/SnakeAi) | One network designs the window, another draws the cells, the snake learns to play | release |
+| [TicTacToeAi](https://github.com/ALEXalesha/TicTacToeAi) | Tic-tac-toe on several board sizes | release |
+| [AiCar](https://github.com/ALEXalesha/AiCar) | A car that learns to drive a track | release |
+| [AiBoy](https://github.com/ALEXalesha/AiBoy) | See above: a little person that learns to live in a generated world | release |
+| [DurakAi](https://github.com/ALEXalesha/DurakAi) | Durak against an AI that never peeks | release |
+| [RockPaperAi](https://github.com/ALEXalesha/RockPaperAi) | Learns your habits; its move is sealed before you choose | release |
+| [BlockDropAi](https://github.com/ALEXalesha/BlockDropAi) | Falling blocks: play, watch the AI or duel it | release |
+| [SaperAi](https://github.com/ALEXalesha/SaperAi) | Minesweeper with the exact chance of a mine in every closed cell | release |
+| [SeaWarAi](https://github.com/ALEXalesha/SeaWarAi) | Battleship against an AI that never sees your board | release |
+| [2048Ai](https://github.com/ALEXalesha/2048Ai) | n-tuple network, TD learning, expectimax | in progress |
+| [ChessCheckersAi](https://github.com/ALEXalesha/ChessCheckersAi) | Checkers and chess, learned by self-play | in progress |
+| [LabirinthAi](https://github.com/ALEXalesha/LabirinthAi) | Solves mazes in the fog it has never seen | in progress |
+| [MiniRTSAi](https://github.com/ALEXalesha/MiniRTSAi) | Real-time strategy against an AI limited by the fog of war | in progress |
+| [PingPongAirHockeyAi](https://github.com/ALEXalesha/PingPongAirHockeyAi) | Ping-pong and air hockey on its own 2D physics | in progress |
+| [RubiksCubeAi](https://github.com/ALEXalesha/RubiksCubeAi) | A 3D cube 2x2 to 4x4: solve it, learn it, or let the AI solve it | in progress |
+| [TanksAi](https://github.com/ALEXalesha/TanksAi) | Top-down tanks that see only their line of sight | in progress |
+| [TennisAi](https://github.com/ALEXalesha/TennisAi) | Tennis in a tilted retro view, singles and doubles | in progress |
+
+## Mods
+
+- [ETS2Mods](https://github.com/ALEXalesha/ETS2Mods) and [AmericanTruckSimulatorMods](https://github.com/ALEXalesha/AmericanTruckSimulatorMods): single-player mods for Euro Truck Simulator 2 and American Truck Simulator, built from the games' own files, also on the Steam Workshop.
+- [MudRunnerMods](https://github.com/ALEXalesha/MudRunnerMods): OpenTrail, gameplay mods for Spintires: MudRunner and the tools that build and check them.
+- [TeardownMods](https://github.com/ALEXalesha/TeardownMods): 17 mods for Teardown 2.x - catapult, earthquake, tsunami, tornado, camera drone and more.
+- [MyCS2Map](https://github.com/ALEXalesha/MyCS2Map): a Counter-Strike 2 map, de_Hum.
+- [GarrysModMods](https://github.com/ALEXalesha/GarrysModMods): Garry's Mod addons, planned.
+
+## Other and planned
+
+- [VideosAndMusicInCode](https://github.com/ALEXalesha/VideosAndMusicInCode): videos and music made entirely in code - showreels, a crab story, pieces with notes on screen.
+- [My3dModels](https://github.com/ALEXalesha/My3dModels): 3D-printable models made in Blender, with sources and print settings.
+- Planned, no code yet or just started: [PcInfo](https://github.com/ALEXalesha/PcInfo) (PC hardware, temperatures and ports, C#/WPF), [FormatBox](https://github.com/ALEXalesha/FormatBox) (a converter for video, audio, images, documents and 3D), [ProjectScore](https://github.com/ALEXalesha/ProjectScore) (a page that scores these projects), [TearDown](https://github.com/ALEXalesha/TearDown) (a voxel world in the browser where everything breaks), [GoingBoy](https://github.com/ALEXalesha/GoingBoy) (human movement with joints and muscles), [InternetBrowser](https://github.com/ALEXalesha/InternetBrowser) (a browser on Electron).
 
 ## How these are made
 
